@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import Banner from "@components/Banner"
 
 import { useEffect, useState } from "react"
 
@@ -73,6 +74,9 @@ export default function Background({ children }: { children?: React.ReactNode })
 
       {/* Content */}
       <div className="relative z-30">{children}</div>
+
+      <Banner />
+
     </div>
   )
 }
