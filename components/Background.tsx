@@ -2,6 +2,8 @@
 
 import type React from "react"
 import Banner from "@components/Banner"
+import AboutMe from "@components/AboutMe"
+// import Sign from"@components/Sign"
 
 import { useEffect, useState } from "react"
 
@@ -75,8 +77,12 @@ export default function Background({ children }: { children?: React.ReactNode })
       {/* Content */}
       <div className="relative z-30">{children}</div>
 
-      <Banner />
-
+      {/* <Banner /> */}
+      {/* <div className="mt-[7vh]">
+        <Sign />
+      </div> */}
+      <div className="mt-32 md:mt-16 flex flex-wrap justify-center"></div>
+      
     </div>
   )
 }
