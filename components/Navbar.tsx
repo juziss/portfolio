@@ -33,7 +33,7 @@ export default function Navbar() {
     <div className="fixed left-0 top-0 z-50 w-full px-4 py-4">
       <nav
         className={`mx-auto flex max-w-6xl items-center justify-between rounded-full px-6 py-3 backdrop-blur-md transition-all duration-300 border border-white/30 ${
-          scrolled ? "border border-white/10 bg-white/10 shadow-lg" : "border border-transparent bg-white/5"
+          scrolled ? "border border-white/10 bg-white/10 shadow-gray-900" : "border border-transparent bg-white/10"
         }`}
       >
         {/* Logo */}
