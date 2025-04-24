@@ -12,13 +12,13 @@ export default function AboutMe() {
         <div className="grid md:grid-cols-3 gap-5">
           <AboutMeCard
             imageSrc="/public/croche.png"
-            altText="Crochê feito à mão"
-            overlayText="Adoro fazer crochê nas horas vagas, é meu momento de paz 🧶"
+            altText="Pintura"
+            overlayText="Sempre tive amor por desenhar ✍️"
           />
           <AboutMeCard
             imageSrc="/public/sketches.png"
             altText="Esboços"
-            overlayText="Sempre tive amor por desenhar ✍️"
+            overlayText="Amo ficar por dentro de tendências 👠"
           />
           <AboutMeCard
             imageSrc="/public/videogame.png"

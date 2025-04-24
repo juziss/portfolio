@@ -5,7 +5,7 @@ export default function AboutMeCard({ imageSrc, altText, overlayText }) {
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      transition={{ duration: 0, ease: "easeOut" }}
       whileHover={{ scale: 1.05, boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)" }}
       viewport={{ once: true }}
       className="w-44 h-60 rounded-2xl shadow-md cursor-pointer relative overflow-hidden group transition-transform duration-300"
