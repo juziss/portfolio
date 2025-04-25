@@ -1,39 +1,37 @@
+import WindowBox from "@components/WindowBox";
+
 export default function Xp() {
-    return (
-      <section className="py-16 px-4 max-w-5xl mx-auto">
-        <h1 className="text-4xl md:text-6xl font-bold text-shadow-cyan-800 mb-10 text-center">
-          Minhas Experiências
-        </h1>
-  
-        <div className="space-y-8">
-          <div className="bg-white/10 border border-white/20 backdrop-blur-md p-6 rounded-2xl shadow-lg">
-            <h2 className="text-xl font-semibold text-cyan-300">
-              TechTails - ERP Petshop
-            </h2>
-            <p className="text-gray-300 mt-2">
-              Atuei com prototipação e documentação no Figma para o sistema ERP voltado a petshops. Desenvolvi fluxos de telas com foco em usabilidade, colaborando diretamente com o time de produto.
-            </p>
-          </div>
-  
-          <div className="bg-white/10 border border-white/20 backdrop-blur-md p-6 rounded-2xl shadow-lg">
-            <h2 className="text-xl font-semibold text-cyan-300">
-              Cadastro de Vereadores
-            </h2>
-            <p className="text-gray-300 mt-2">
-              Projeto com foco em UI/UX, validação de formulários e integração com banco de dados usando JavaScript e PHP. Desenvolvido como solução prática para gerenciamento de dados institucionais.
-            </p>
-          </div>
-  
-          <div className="bg-white/10 border border-white/20 backdrop-blur-md p-6 rounded-2xl shadow-lg">
-            <h2 className="text-xl font-semibold text-cyan-300">
-              Sistema para Escola de Música
-            </h2>
-            <p className="text-gray-300 mt-2">
-              Sistema acadêmico com rotinas de banco de dados avançadas, como triggers, views e procedures em MySQL. Participei ativamente do planejamento até a modelagem e desenvolvimento.
-            </p>
-          </div>
-        </div>
-      </section>
-    );
-  }
-  
+  return (
+    <section className="py-16 px-4 max-w-5xl mx-auto">
+      <h2 className="text-5xl font-extrabold text-gray-800 mb-4">
+        XP e Projetos
+      </h2>
+      <WindowBox title="DMTE">
+        <iframe
+          style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+          width="800"
+          height="450"
+          src="https://embed.figma.com/design/fap3wTHMJNwqYlGyYUQxSR/SISTEMA-DMTE?node-id=0-1&embed-host=share"
+          allowFullScreen
+        ></iframe>
+      </WindowBox>
+      <p className="text-gray-600">
+        Este foi um projeto full stack em que trabalhei para a Universidade Estadual de Montes Claros para o desenvolvimento de um sistema de gestão do Departamento de Métodos e Técnicas. Criei o protótipo da aplicação
+        que mais tarde eu programei utilizando React e Bootstrap.
+      </p>
+      <WindowBox title="DMTE">
+        <iframe
+          style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+          width="800"
+          height="450"
+          src="https://embed.figma.com/design/fap3wTHMJNwqYlGyYUQxSR/SISTEMA-DMTE?node-id=0-1&embed-host=share"
+          allowFullScreen
+        ></iframe>
+      </WindowBox>
+      <p className="text-gray-600">
+        Este foi um projeto full stack em que trabalhei para a Universidade Estadual de Montes Claros para o desenvolvimento de um sistema de gestão do Departamento de Métodos e Técnicas. Criei o protótipo da aplicação
+        que mais tarde eu programei utilizando React e Bootstrap.
+      </p>
+    </section>
+  );
+}
