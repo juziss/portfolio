@@ -1,58 +1,53 @@
 import { motion } from "framer-motion";
-import SkillNotifications from "@components/SkillNotifications"
+import SkillNotifications from "@components/SkillNotifications";
 
 export default function Skills() {
   const skills = [
     { src: "/public/ps.png", alt: "Photoshop" },
     { src: "/public/ilustr.png", alt: "Illustrator" },
     { src: "/public/figma.png", alt: "Figma" },
-    // { src: "/public/Blender.png", alt: "Blender" },
     { src: "/public/clip.png", alt: "Clip Studio Paint" },
   ];
 
   const notifications1 = [
-    { name: "React", title: "Nova Notificação", time: "12:30 PM" },
-    { name: "Node.js", title: "Nova Notificação", time: "12:45 PM" },
-  ];
-
-  const notifications2 = [
-    { name: "PHP", title: "Nova Notificação", time: "1:00 PM" },
-    { name: "SQL", title: "Nova Notificação", time: "1:15 PM" },
+    { name: "ReactJS", title: "Alerta de Skill", time: "12:30 PM" },
+    { name: "TailwindCSS", title: "Alerta de Skill", time: "12:45 PM" },
+    { name: "PHP", title: "Alerta de Skill", time: "1:00 PM" },
+    { name: "SQL", title: "Alerta de Skill", time: "1:15 PM" },
   ];
 
   return (
-    <section className="py-16 px-4">
-  <h2 className="text-gray-700 text-5xl font-bold mb-12 text-center">Skills</h2>
+    <section className="py-20 px-6">
+      <div className="text-center mb-16">
+        <h2 className="text-5xl font-extrabold text-gray-800 mb-4">Skills</h2>
+        <p className="text-gray-500 text-lg">Linguagens, ferramentas e plataformas que domino</p>
+      </div>
 
-  <div className="flex flex-col lg:flex-row items-start justify-center gap-16">
-    
-    {/* Lado esquerdo: texto + notificações */}
-    <div className="flex flex-col gap-6 max-w-md">
-      <p className="text-lg text-gray-600">
-        Essas são algumas das tecnologias que domino em programação e design:
-      </p>
-      <SkillNotifications notifications={notifications1} />
-      <SkillNotifications notifications={notifications2} />
-    </div>
+      <div className="flex flex-col lg:flex-row items-start justify-center gap-20 max-w-7xl mx-auto">
+        {/* Notificações */}
+        <div className="flex flex-col gap-8 w-full max-w-md">
+          <SkillNotifications notifications={notifications1} />
+        </div>
 
-    {/* Lado direito: logos das ferramentas de design */}
-    <div className="flex flex-wrap justify-center gap-10">
-      {skills.map((skill, index) => (
-        <motion.div
-          key={index}
-          whileHover={{ scale: 1.2 }}
-          transition={{ type: "spring", stiffness: 150, damping: 20 }}
-          className="w-24 h-24 flex items-center justify-center"
-        >
-          <img
-            src={skill.src}
-            alt={skill.alt}
-            className="w-full h-full object-contain"
-          />
-        </motion.div>
-      ))}
-    </div>
-  </div>
-</section>
+        {/* Skills visuais */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 justify-items-center">
+          {skills.map((skill, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 200, damping: 15 }}
+              className="flex flex-col items-center gap-2 p-4 rounded-2xl w-28 h-28"
+            >
+              <img
+                src={skill.src}
+                alt={skill.alt}
+                className="w-12 h-12 object-contain"
+              />
+              <span className="text-sm text-gray-600 text-center">{skill.alt}</span>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }

@@ -4,6 +4,7 @@ import Navbar from "@components/Navbar"
 import Banner from "@components/Banner"
 import AboutMe from "@components/AboutMe"
 import Skills from "@components/Skills"
+import Xp from "@components/Xp"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Banner />
         <AboutMe />
         <Skills />
+        <Xp />
       </Background>
     </main>
   );
