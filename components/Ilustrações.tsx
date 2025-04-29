@@ -39,7 +39,7 @@ export default function Ilustracoes() {
               <img
                 src={ilustracao.src}
                 alt={ilustracao.alt}
-                className="w-full object-contain rounded-md shadow-sm"
+                className="w-full object-contain rounded-md shadow"
                 style={{ maxHeight: `${Math.max(160, Math.random() * 70 + 140)}px` }}
               />
             </div>

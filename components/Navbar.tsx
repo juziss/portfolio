@@ -24,8 +24,7 @@ export default function Navbar() {
     { name: "Sobre Mim", to: "#sobre" },  // Alteração de href para to
     { name: "Skills", to: "#habilidades" },  // Alteração de href para to
     { name: "Experiência", to: "#experiencia" },  // Alteração de href para to
-    { name: "Serviços", to: "#servicos" },  // Alteração de href para to
-    { name: "Projetos", to: "#projetos" },  // Alteração de href para to
+    { name: "Ilustrações", to: "#ilustrações" },  // Alteração de href para to
     { name: "Contato", to: "#contato" },  // Alteração de href para to
   ];
 
