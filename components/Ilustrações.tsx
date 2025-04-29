@@ -1,35 +1,58 @@
+import React from "react";
+
 export default function Ilustracoes() {
-    // const ilustracoes = [
-    //   { src: "/desenho1.png", alt: "Desenho 1", desc: "Lorem ipsum dolor sit amet." },
-    //   { src: "/desenho2.png", alt: "Desenho 2", desc: "Lorem ipsum dolor sit amet." },
-    //   { src: "/desenho3.png", alt: "Desenho 3", desc: "Lorem ipsum dolor sit amet." },
-    //   { src: "/desenho4.png", alt: "Carta 1", desc: "Carta de um projeto de GameJam cancelado." },
-    //   { src: "/desenho5.png", alt: "Carta 2", desc: "Carta de um projeto de GameJam cancelado." },
-    //   { src: "/desenho6.png", alt: "Carta 3", desc: "Carta de um projeto de GameJam cancelado." },
-    //   { src: "/desenho7.png", alt: "Carta 4", desc: "Carta de um projeto de GameJam cancelado." },
-    //   { src: "/desenho8.png", alt: "Desenho 8", desc: "Lorem ipsum dolor sit amet." },
-    //   { src: "/desenho10.png", alt: "Desenho 10", desc: "Lorem ipsum dolor sit amet." },
-    //   { src: "/desenho11.png", alt: "Desenho 11", desc: "Lorem ipsum dolor sit amet." },
-    // ];
-  
-    return (
-      <section className="relative py-20 px-8">
-        <h2 className="text-5xl font-extrabold text-gray-800 mb-12 text-center">
-            Ilustrações
-        </h2>
-        <img
-          src="/desenho9.png"
-          alt="Desenho 9"
-          className="hidden md:block absolute right-300 top-1/2 -translate-y-1/2 w-200 lg:w-200 pointer-events-none"
-        />
-  
-        {/* Ilustração 12 - destaque lateral direita */}
-        <img
-          src="/desenho12.png"
-          alt="Desenho 12"
-          className="hidden md:block absolute right-0 bottom-0 w-72 lg:w-96 pointer-events-none"
-        />
-      </section>
-    );
-  }
-  
+  // Array com todas as ilustrações (exceto a 9 e a 12 que são decorativas)
+  const ilustracoes = [
+    { id: 1, src: "/desenho1.png", alt: "Desenho 1" },
+    { id: 2, src: "/desenho2.png", alt: "Desenho 2" },
+    { id: 3, src: "/desenho3.png", alt: "Desenho 3" },
+    { id: 8, src: "/desenho8.png", alt: "Desenho 8" },
+    { id: 10, src: "/desenho10.png", alt: "Desenho 10" },
+    { id: 11, src: "/desenho11.png", alt: "Desenho 11" },
+  ];
+
+  return (
+    <section className="relative py-20 px-8 overflow-hidden">
+      <h2 className="text-5xl font-extrabold text-gray-800 mb-16 text-center z-10 relative">
+        Ilustrações
+      </h2>
+
+      {/* Ilustração 9 - mulher em pé na lateral esquerda ocupando toda a altura */}
+      <img
+        src="/desenho9.png"
+        alt="Desenho 9"
+        className="hidden lg:block absolute right-280 top-0 h-full max-w-[60rem] object-contain pointer-events-none z-0"
+      />
+
+      {/* Container principal para o layout irregular de ilustrações */}
+      <div className="max-w-6xl mx-auto pl-0 lg:pl-24 z-10 relative">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+          {ilustracoes.map((ilustracao) => (
+            <div 
+              key={ilustracao.id} 
+              className="transform transition hover:scale-105 cursor-pointer"
+              style={{ 
+                width: `${Math.max(180, Math.random() * 80 + 160)}px`,
+                maxWidth: '280px'
+              }}
+            >
+              <img
+                src={ilustracao.src}
+                alt={ilustracao.alt}
+                className="w-full object-contain rounded-md shadow-sm"
+                style={{ maxHeight: `${Math.max(160, Math.random() * 70 + 140)}px` }}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Ilustração 12 - lateral direita inferior */}
+      <img
+        src="/desenho12.png"
+        alt="Desenho 12"
+        className="hidden md:block absolute right-10 bottom-[4rem] w-[14rem] pointer-events-none z-0"
+      />
+    </section>
+  );
+}
