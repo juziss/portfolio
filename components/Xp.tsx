@@ -49,11 +49,11 @@ export default function Xp() {
       <div className="flex flex-col md:flex-row gap-8 mb-16 items-center">
         <div className="flex-1">
           <WindowBox title="GAMECHECK - Plataforma de Avaliação de Jogos">
-            <img
-              src="/gamecheck.gif"
-              alt="Demonstração do projeto GAMECHECK"
-              className="w-full h-64 md:h-80 object-cover rounded-md"
-            />
+          <img
+            src="/gamecheck.gif"
+            alt="Demonstração do projeto GAMECHECK"
+            className="w-full h-64 md:h-80 object-contain rounded-md"
+          />
           </WindowBox>
         </div>
         <div className="flex-1 text- text-gray-600 flex flex-col gap-4">
