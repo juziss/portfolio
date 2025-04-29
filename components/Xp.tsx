@@ -2,7 +2,7 @@ import WindowBox from "@components/WindowBox";
 
 export default function Xp() {
   return (
-    <section className="py-16 px-4 max-w-5xl mx-auto">
+    <section className="py-16 px-4 max-w-5xl mx-auto" id="experiencia">
       <h2 className="text-5xl font-extrabold text-gray-800 mb-12 text-center">
         XP e Projetos
       </h2>

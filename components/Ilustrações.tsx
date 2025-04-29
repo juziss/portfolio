@@ -12,7 +12,7 @@ export default function Ilustracoes() {
   ];
 
   return (
-    <section className="relative py-20 px-8 overflow-hidden">
+    <section className="relative py-20 px-8 overflow-hidden" id="ilustracoes">
       <h2 className="text-5xl font-extrabold text-gray-800 mb-16 text-center z-10 relative">
         Ilustrações
       </h2>
