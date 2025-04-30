@@ -10,12 +10,19 @@ import Contato from "@components/Contato"
 import Footer from "@components/Footer"
 import ColorfulSelect from "@components/ColorfulSelect"
 
+import { useEffect } from 'react';
+
 export default function Home() {
+  
+  useEffect(() => {
+    document.title = "Portfólio | Julia";
+  }, []);
+
   return (
     <main className="min-h-screen">
+      <Cursor />
       <Background>
       <ColorfulSelect >
-      <Cursor />
         <Navbar />
         <Banner />
         <AboutMe />
