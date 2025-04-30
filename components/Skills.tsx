@@ -3,12 +3,18 @@
 import { motion } from "framer-motion";
 import SkillNotifications from "@components/SkillNotifications";
 
+// Importações diretas das imagens
+import psImage from "/public/ps.png";
+import ilustrImage from "/public/ilustr.png";
+import figmaImage from "/public/figma.png";
+import clipImage from "/public/clip.png";
+
 export default function Skills() {
   const skills = [
-    { src: "/ps.png", alt: "Photoshop" },
-    { src: "/ilustr.png", alt: "Illustrator" },
-    { src: "/figma.png", alt: "Figma" },
-    { src: "/clip.png", alt: "Clip Studio Paint" },
+    { src: psImage, alt: "Photoshop" },
+    { src: ilustrImage, alt: "Illustrator" },
+    { src: figmaImage, alt: "Figma" },
+    { src: clipImage, alt: "Clip Studio Paint" },
   ];
 
   const notifications1 = [
