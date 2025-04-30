@@ -46,7 +46,7 @@ export default function Xp() {
         </div>
         <div className="flex-1 text- text-gray-600 flex flex-col gap-4">
           <p>
-            Opa, sim haha, esse portfólio aqui foi inteiramente projetado e desenvolvido por mim, passou por várias versões e designs até essa versão final. Fiz com muito carinho e dedicação para ficar "a minha cara" ^-^
+            Opa, sim haha, esse portfólio aqui foi inteiramente projetado e desenvolvido por mim, passou por várias versões e designs até essa versão final. Fiz com muito carinho e dedicação para ficar "a minha cara", utilizei React e Tailwind para a mágica acontecer.
           </p>
           <a
             href="https://github.com/juziss/portfolio"
@@ -58,7 +58,7 @@ export default function Xp() {
           </a>
         </div>
       </div>
-      
+
       {/* Projeto DMTE */}
       <div className="flex flex-col md:flex-row gap-8 mb-16 items-center">
         <div className="flex-1">

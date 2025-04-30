@@ -7,7 +7,7 @@ export default function AboutMe() {
     <section className="flex flex-col md:flex-row py-12 px-4 md:px-8 lg:px-16"  id="sobre">
       {/* Cards - lado esquerdo */}
       <div className="w-full md:w-1/2 pr-6 md:pr-10 pl-4 sm:pl-6 md:pl-10 lg:pl-30">
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-3 gap-5 text-gray-700">
           <AboutMeCard
             imageSrc="/public/croche.png"
             altText="Pintura"
