@@ -3,10 +3,10 @@ import SkillNotifications from "@components/SkillNotifications";
 
 export default function Skills() {
   const skills = [
-    { src: "/public/ps.png", alt: "Photoshop" },
-    { src: "/public/ilustr.png", alt: "Illustrator" },
-    { src: "/public/figma.png", alt: "Figma" },
-    { src: "/public/clip.png", alt: "Clip Studio Paint" },
+    { src: "/ps.png", alt: "Photoshop" },
+    { src: "/ilustr.png", alt: "Illustrator" },
+    { src: "/figma.png", alt: "Figma" },
+    { src: "/clip.png", alt: "Clip Studio Paint" },
   ];
 
   const notifications1 = [
