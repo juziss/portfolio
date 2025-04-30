@@ -3,7 +3,6 @@ import React from "react";
 export default function Sign() {
   return (
     <section className="relative w-full bg-pink-300 overflow-hidden h-23 flex items-center">
-      {/* Faixa rolando em loop contínuo */}
       <div className="absolute w-full h-full flex items-center overflow-hidden">
         <div className="marquee whitespace-nowrap text-xl font-bold text-gray-700 flex items-center">
           {[...Array(10)].map((_, i) => (
@@ -17,7 +16,6 @@ export default function Sign() {
         </div>
       </div>
 
-      {/* Estilo para animação */}
       <style>
         {`
           .marquee {

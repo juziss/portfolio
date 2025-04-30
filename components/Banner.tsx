@@ -6,7 +6,6 @@ export default function Banner() {
     Array(9).fill({ x: 0, y: 0, rotate: 0 }),
   )
 
-  // Check if mobile
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768)
@@ -20,15 +19,14 @@ export default function Banner() {
     }
   }, [])
 
-  // Tremble effect
   useEffect(() => {
     const trembleInterval = setInterval(() => {
       const newTrembleValues = Array(9)
         .fill(0)
         .map(() => ({
-          x: Math.random() * 4 - 2, // -2 to 2
-          y: Math.random() * 4 - 2, // -2 to 2
-          rotate: Math.random() * 2 - 1, // -1 to 1
+          x: Math.random() * 4 - 2, 
+          y: Math.random() * 4 - 2, 
+          rotate: Math.random() * 2 - 1,
         }))
       setTrembleValues(newTrembleValues)
     }, 150)
@@ -36,7 +34,6 @@ export default function Banner() {
     return () => clearInterval(trembleInterval)
   }, [])
 
-  // Portfolio letters
   const portfolioLetters = [
     { letter: "P", src: "/public/P.png", width: 120, height: 100 },
     { letter: "O", src: "/public/O1.png", width: 120, height: 100 },
@@ -58,10 +55,7 @@ export default function Banner() {
         <h2 className="text-gray-700">DEV & DESIGNER</h2>
       </div>
     </div>
-
-
-        {/* Portfolio magazine cutout letters */}
-        <div className="mt-32 md:mt-16 flex flex-wrap justify-center">
+      <div className="mt-32 md:mt-16 flex flex-wrap justify-center">
           {portfolioLetters.map((item, index) => (
             <div
               key={index}

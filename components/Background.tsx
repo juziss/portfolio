@@ -1,17 +1,10 @@
-"use client"
-
 import type React from "react"
-import Banner from "@components/Banner"
-import AboutMe from "@components/AboutMe"
-// import Sign from"@components/Sign"
-
 import { useEffect, useState } from "react"
 
 export default function Background({ children }: { children?: React.ReactNode }) {
   const [blobs, setBlobs] = useState<Array<{ x: number; y: number; size: number; rotation: number }>>([])
 
   useEffect(() => {
-    // Generate random pink gradient blobs
     const numberOfBlobs = 6
     const newBlobs = []
 
@@ -19,7 +12,7 @@ export default function Background({ children }: { children?: React.ReactNode })
       newBlobs.push({
         x: Math.random() * 100,
         y: Math.random() * 100,
-        size: Math.random() * 300 + 150, // 150-450px
+        size: Math.random() * 300 + 150, 
         rotation: Math.random() * 360,
       })
     }
@@ -29,7 +22,6 @@ export default function Background({ children }: { children?: React.ReactNode })
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-neutral-100">
-      {/* Grid overlay */}
       <div
         className="absolute inset-0 z-0 opacity-20"
         style={{
@@ -39,7 +31,6 @@ export default function Background({ children }: { children?: React.ReactNode })
         }}
       />
 
-      {/* Pink gradient blobs */}
       {blobs.map((blob, index) => (
         <div
           key={index}
@@ -56,7 +47,6 @@ export default function Background({ children }: { children?: React.ReactNode })
         />
       ))}
 
-      {/* Enhanced grain texture overlay */}
       <div
         className="absolute inset-0 z-10 mix-blend-overlay opacity-40"
         style={{
@@ -65,7 +55,6 @@ export default function Background({ children }: { children?: React.ReactNode })
         }}
       />
 
-      {/* Additional grain layer for more texture */}
       <div
         className="absolute inset-0 z-20 mix-blend-multiply opacity-10"
         style={{
@@ -74,13 +63,7 @@ export default function Background({ children }: { children?: React.ReactNode })
         }}
       />
 
-      {/* Content */}
       <div className="relative z-30">{children}</div>
-
-      {/* <Banner /> */}
-      {/* <div className="mt-[7vh]">
-        <Sign />
-      </div> */}
       <div className="mt-32 md:mt-16 flex flex-wrap justify-center"></div>
       
     </div>

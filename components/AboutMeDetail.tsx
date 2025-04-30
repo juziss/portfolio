@@ -1,6 +1,3 @@
-import React from "react";
-import { motion } from "framer-motion";
-
 export default function AboutMeDetail() {
   return (
     <div className=" border-transparent rounded-3xl p-8 max-w-md w-full border border-white/30 backdrop-blur-sm">

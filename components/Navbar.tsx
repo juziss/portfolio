@@ -5,7 +5,6 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Efeito de scroll para mudar o estilo da navbar
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);

@@ -1,7 +1,4 @@
-"use client"
-
 import { useEffect, useState } from "react"
-
 interface TrailDot {
   id: number
   x: number
@@ -13,19 +10,15 @@ interface TrailDot {
 export default function Cursor() {
   const [trail, setTrail] = useState<TrailDot[]>([])
 
-  // Gerencia o movimento do mouse e o efeito de rastro
   useEffect(() => {
-    // Adiciona console log para verificar se o efeito está rodando
     console.log("Efeito CursorTrail rodando")
 
     let trailCounter = 0
 
     const handleMouseMove = (e: MouseEvent) => {
-      // Adiciona novo ponto ao rastro
       setTrail((prevTrail) => {
-        const newTrail = [...prevTrail]
 
-        // Adiciona novo ponto na posição atual
+        const newTrail = [...prevTrail]
         newTrail.push({
           id: trailCounter++,
           x: e.clientX,
@@ -34,7 +27,6 @@ export default function Cursor() {
           opacity: 0.6,
         })
 
-        // Mantém apenas os últimos 20 pontos
         if (newTrail.length > 20) {
           newTrail.shift()
         }
@@ -43,7 +35,6 @@ export default function Cursor() {
       })
     }
 
-    // Configura o intervalo de desaparecimento do rastro
     const fadeInterval = setInterval(() => {
       setTrail((prevTrail) =>
         prevTrail
@@ -66,10 +57,8 @@ export default function Cursor() {
 
   return (
     <div className="fixed inset-0 pointer-events-none" style={{ zIndex: 5 }}>
-      {/* Adiciona um elemento visível para verificar se o componente está renderizando */}
       <div className="hidden">CursorTrail está renderizando</div>
 
-      {/* Rastro do cursor */}
       {trail.map((dot) => (
         <div
           key={dot.id}

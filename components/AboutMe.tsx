@@ -1,5 +1,3 @@
-"use client";
-
 import type React from "react";
 import AboutMeCard from "@components/AboutMeCard";
 import AboutMeDetail from "@components/AboutMeDetail";

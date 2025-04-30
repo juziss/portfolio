@@ -1,7 +1,4 @@
-import React from "react";
-
 export default function Ilustracoes() {
-  // Array com todas as ilustrações (exceto a 9 e a 12 que são decorativas)
   const ilustracoes = [
     { id: 1, src: "/desenho1.png", alt: "Desenho 1" },
     { id: 2, src: "/desenho2.png", alt: "Desenho 2" },
@@ -17,14 +14,12 @@ export default function Ilustracoes() {
         Ilustrações
       </h2>
 
-      {/* Ilustração 9 - mulher em pé na lateral esquerda ocupando toda a altura */}
       <img
         src="/desenho9.png"
         alt="Desenho 9"
         className="hidden lg:block absolute right-280 top-0 h-full max-w-[60rem] object-contain pointer-events-none z-0"
       />
 
-      {/* Container principal para o layout irregular de ilustrações */}
       <div className="max-w-6xl mx-auto pl-0 lg:pl-24 z-10 relative">
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           {ilustracoes.map((ilustracao) => (
@@ -47,7 +42,6 @@ export default function Ilustracoes() {
         </div>
       </div>
 
-      {/* Ilustração 12 - lateral direita inferior */}
       <img
         src="/desenho12.png"
         alt="Desenho 12"

@@ -34,7 +34,7 @@ export default function Xp() {
       </div>
 
       {/* Projeto Portfólio */}
-      <div className="flex flex-col md:flex-row gap-8 mb-16 items-center">
+      <div className="flex flex-col md:flex-row-reverse gap-8 mb-16 items-center">
         <div className="flex-1">
           <WindowBox title="Portfólio 2025">
           <img
@@ -58,6 +58,7 @@ export default function Xp() {
           </a>
         </div>
       </div>
+      
       {/* Projeto DMTE */}
       <div className="flex flex-col md:flex-row gap-8 mb-16 items-center">
         <div className="flex-1">
