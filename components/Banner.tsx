@@ -2,9 +2,7 @@ import { useEffect, useState } from "react"
 
 export default function Banner() {
   const [isMobile, setIsMobile] = useState(false)
-  const [trembleValues, setTrembleValues] = useState<{ x: number; y: number; rotate: number }[]>(
-    Array(9).fill({ x: 0, y: 0, rotate: 0 }),
-  )
+  const [trembleValues, setTrembleValues] = useState<{ x: number; y: number; rotate: number }[]>(Array(9).fill({ x: 0, y: 0, rotate: 0 }))
 
   useEffect(() => {
     const checkMobile = () => {
@@ -21,13 +19,11 @@ export default function Banner() {
 
   useEffect(() => {
     const trembleInterval = setInterval(() => {
-      const newTrembleValues = Array(9)
-        .fill(0)
-        .map(() => ({
-          x: Math.random() * 4 - 2, 
-          y: Math.random() * 4 - 2, 
-          rotate: Math.random() * 2 - 1,
-        }))
+      const newTrembleValues = Array(9).fill(0).map(() => ({
+        x: Math.random() * 4 - 2, 
+        y: Math.random() * 4 - 2, 
+        rotate: Math.random() * 2 - 1,
+      }))
       setTrembleValues(newTrembleValues)
     }, 150)
 
@@ -49,13 +45,13 @@ export default function Banner() {
   return (
     <section className="w-full h-[calc(100vh-80px)] flex items-center justify-center">
       <div className="">
-      <div className="sticky top-30 left-75 top- p-4 text-left">
-      <h1 className="text-pink-500 text-2xl">JULIA COUTINHO</h1>
-      <div className="bg-pink-100 inline-block">
-        <h2 className="text-gray-700">DEV & DESIGNER</h2>
-      </div>
-    </div>
-      <div className="mt-32 md:mt-16 flex flex-wrap justify-center">
+        <div className="sticky top-30 left-75 top- p-4 text-left">
+          <h1 className={`text-pink-500 text-2xl ${isMobile ? "text-center" : ""}`}>JULIA COUTINHO</h1>
+          <div className="bg-pink-100 inline-block">
+            <h2 className={`text-gray-700 ${isMobile ? "text-center" : ""}`}>DEV & DESIGNER</h2>
+          </div>
+        </div>
+        <div className={`mt-32 md:mt-16 flex flex-wrap justify-center ${isMobile ? "hidden" : ""}`}>
           {portfolioLetters.map((item, index) => (
             <div
               key={index}

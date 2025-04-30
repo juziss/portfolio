@@ -56,6 +56,15 @@ export default function Skills() {
           ))}
         </div>
       </div>
+
+      {/* Responsivo: esconder imagens em telas menores */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .skills-grid img {
+            display: none;
+          }
+        }
+      `}</style>
     </section>
   );
 }
