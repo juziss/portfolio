@@ -7,6 +7,7 @@ import Skills from "@components/Skills"
 import Xp from "@components/Xp"
 import Ilustrações from "@components/Ilustrações"
 import Contato from "@components/Contato"
+import Footer from "@components/Footer"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Ilustrações />
         <Contato />
       </Background>
+        <Footer />
     </main>
   );
 }
