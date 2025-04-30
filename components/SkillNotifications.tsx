@@ -18,7 +18,7 @@ const SkillNotifications: React.FC<SkillNotificationsProps> = ({ notifications }
           className="backdrop-blur-md bg-gray-500/10 border border-white/20 text-gray-800 px-4 py-3 rounded-xl shadow-md flex items-center justify-between gap-2"
         >
           <div className="flex items-center gap-2">
-            <img src="/public/react.svg" alt="check" className="w-5 h-5" />
+            <img src="/react.svg" alt="check" className="w-5 h-5" />
             <div>
               <div className="text-xs text-gray-500">{notification.title}</div>
               <span className="font-medium text-sm">{notification.name}</span>

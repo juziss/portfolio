@@ -9,32 +9,32 @@ export default function AboutMe() {
       <div className="w-full md:w-1/2 pr-6 md:pr-10 pl-4 sm:pl-6 md:pl-10 lg:pl-30">
         <div className="grid md:grid-cols-3 gap-5 text-gray-700">
           <AboutMeCard
-            imageSrc="/public/croche.png"
+            imageSrc="/croche.png"
             altText="Pintura"
             overlayText="Sempre tive amor por desenhar ✍️"
           />
           <AboutMeCard
-            imageSrc="/public/sketches.png"
+            imageSrc="/sketches.png"
             altText="Esboços"
             overlayText="Amo ficar por dentro de tendências 👠"
           />
           <AboutMeCard
-            imageSrc="/public/videogame.png"
+            imageSrc="/videogame.png"
             altText="Videogames"
             overlayText="Gosto de explorar jogos indie e pixelados 🎮"
           />
           <AboutMeCard
-            imageSrc="/public/tay.png"
+            imageSrc="/tay.png"
             altText="Taylor Swift"
             overlayText="Sou apaixonada por música — Taylor Swift no repeat 🎵"
           />
           <AboutMeCard
-            imageSrc="/public/tech.png"
+            imageSrc="/tech.png"
             altText="Tecnologia"
             overlayText="Tecnologia sempre foi meu universo favorito 💻"
           />
           <AboutMeCard
-            imageSrc="/public/cooking.png"
+            imageSrc="/cooking.png"
             altText="Cozinhando"
             overlayText="Cozinhar virou uma forma de criar e relaxar 🍳"
           />

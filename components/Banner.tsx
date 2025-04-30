@@ -35,15 +35,15 @@ export default function Banner() {
   }, [])
 
   const portfolioLetters = [
-    { letter: "P", src: "/public/P.png", width: 120, height: 100 },
-    { letter: "O", src: "/public/O1.png", width: 120, height: 100 },
-    { letter: "R", src: "/public/R.png", width: 120, height: 100 },
-    { letter: "T", src: "/public/T.png", width: 120, height: 100 },
-    { letter: "F", src: "/public/F.png", width: 120, height: 100 },
-    { letter: "O", src: "/public/O2.png", width: 120, height: 100 },
-    { letter: "L", src: "/public/L.png", width: 90, height: 100 },
-    { letter: "I", src: "/public/I.png", width: 90, height: 100 },
-    { letter: "O", src: "/public/O3.png", width: 120, height: 100 },
+    { letter: "P", src: "/P.png", width: 120, height: 100 },
+    { letter: "O", src: "/O1.png", width: 120, height: 100 },
+    { letter: "R", src: "/R.png", width: 120, height: 100 },
+    { letter: "T", src: "/T.png", width: 120, height: 100 },
+    { letter: "F", src: "/F.png", width: 120, height: 100 },
+    { letter: "O", src: "/O2.png", width: 120, height: 100 },
+    { letter: "L", src: "/L.png", width: 90, height: 100 },
+    { letter: "I", src: "/I.png", width: 90, height: 100 },
+    { letter: "O", src: "/O3.png", width: 120, height: 100 },
   ]
 
   return (
