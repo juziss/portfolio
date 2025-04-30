@@ -7,6 +7,57 @@ export default function Xp() {
         XP e Projetos
       </h2>
 
+      {/* Projeto GAMECHECK */}
+      <div className="flex flex-col md:flex-row gap-8 mb-16 items-center">
+        <div className="flex-1">
+          <WindowBox title="GAMECHECK - Plataforma de Avaliação de Jogos">
+          <img
+            src="/gamecheck.gif"
+            alt="Demonstração do projeto GAMECHECK"
+            className="w-full h-64 md:h-80 object-contain rounded-md"
+          />
+          </WindowBox>
+        </div>
+        <div className="flex-1 text- text-gray-600 flex flex-col gap-4">
+          <p>
+            Projeto full stack desenvolvido para a disciplina de Banco de Dados II na Unimontes. O GAMECHECK é uma plataforma onde usuários podem avaliar jogos, criar listas personalizadas e interagir com a comunidade. Trabalhei no front-end (HTML, CSS, JavaScript) e banco de dados (MySQL), além de estruturar toda a aplicação e versionar o projeto no GitHub. Destaque para recursos como cadastro de usuários, avaliações com estrelas e busca avançada de jogos.
+          </p>
+          <a
+            href="https://github.com/juziss/GameCheck"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-pink-500 text-white font-semibold py-2 px-6 rounded-md hover:bg-gray-600 transition-colors w-fit"
+          >
+            Ver no GitHub
+          </a>
+        </div>
+      </div>
+
+      {/* Projeto Portfólio */}
+      <div className="flex flex-col md:flex-row gap-8 mb-16 items-center">
+        <div className="flex-1">
+          <WindowBox title="Portfólio 2025">
+          <img
+            src="/portfólio.png"
+            alt="Demonstração do Portfólio"
+            className="w-full h-64 md:h-80 object-contain rounded-md"
+          />
+          </WindowBox>
+        </div>
+        <div className="flex-1 text- text-gray-600 flex flex-col gap-4">
+          <p>
+            Opa, sim haha, esse portfólio aqui foi inteiramente projetado e desenvolvido por mim, passou por várias versões e designs até essa versão final. Fiz com muito carinho e dedicação para ficar "a minha cara" ^-^
+          </p>
+          <a
+            href="https://github.com/juziss/portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-pink-500 text-white font-semibold py-2 px-6 rounded-md hover:bg-gray-600 transition-colors w-fit"
+          >
+            Ver no GitHub
+          </a>
+        </div>
+      </div>
       {/* Projeto DMTE */}
       <div className="flex flex-col md:flex-row gap-8 mb-16 items-center">
         <div className="flex-1">
@@ -45,31 +96,6 @@ export default function Xp() {
         </div>
       </div>
 
-      {/* Projeto GAMECHECK */}
-      <div className="flex flex-col md:flex-row gap-8 mb-16 items-center">
-        <div className="flex-1">
-          <WindowBox title="GAMECHECK - Plataforma de Avaliação de Jogos">
-          <img
-            src="/gamecheck.gif"
-            alt="Demonstração do projeto GAMECHECK"
-            className="w-full h-64 md:h-80 object-contain rounded-md"
-          />
-          </WindowBox>
-        </div>
-        <div className="flex-1 text- text-gray-600 flex flex-col gap-4">
-          <p>
-            Projeto full stack desenvolvido para a disciplina de Banco de Dados II na Unimontes. O GAMECHECK é uma plataforma onde usuários podem avaliar jogos, criar listas personalizadas e interagir com a comunidade. Trabalhei no front-end (HTML, CSS, JavaScript) e banco de dados (MySQL), além de estruturar toda a aplicação e versionar o projeto no GitHub. Destaque para recursos como cadastro de usuários, avaliações com estrelas e busca avançada de jogos.
-          </p>
-          <a
-            href="https://github.com/juziss/GameCheck"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-pink-500 text-white font-semibold py-2 px-6 rounded-md hover:bg-gray-600 transition-colors w-fit"
-          >
-            Ver no GitHub
-          </a>
-        </div>
-      </div>
     </section>
   );
 }
